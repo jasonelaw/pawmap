@@ -10,3 +10,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/jasonelaw/pawmap
 BugReports: https://github.com/jasonelaw/pawmap/issues
+Imports: 
+    dplyr,
+    fs,
+    lubridate
