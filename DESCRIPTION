@@ -1,9 +1,9 @@
 Package: pawmap
-Title: What the Package Does (One Line, Title Case)
+Title: R package for interacting with City of Portland PAWMAP project data
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Jason", "Law", , "jason.law@portlandoregon.gov", role = c("aut", "cre"))
+Description: Utility functions for City of Portland staff to interact with PAWMAP data.
 License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
