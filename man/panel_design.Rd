@@ -19,3 +19,9 @@ table is current through the current date and time. The final entry will be
 the current year or quarter. The \code{by} argument controls whether the table
 contains annual or quarterly entries.
 }
+\examples{
+# example code
+panel_design("year")
+panel_design("quarter")
+
+}

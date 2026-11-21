@@ -8,8 +8,12 @@
 #' @param by whether the table should return the annual panel design or whether
 #'  the table should contain entries for each quarter.
 #' @return A table of PAWMAP sampling years, panels and cycles
+#' @examples
+#' # example code
+#' panel_design("year")
+#' panel_design("quarter")
+#'
 #' @export
-
 panel_design <- function(by = c("year", "quarter")) {
   by <- match.arg(by)
   today <- clock::date_now(zone = Sys.timezone())

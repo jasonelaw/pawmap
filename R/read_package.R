@@ -1,6 +1,6 @@
 package_path <- function() {
   package_dir <- fs::path_package("pawmap", "extdata")
-  fs::path(package_dir, "pawmap_package", ext = "zip")
+  fs::dir_ls(package_dir, regexp = "pawmap_package_v.+.zip")
 }
 
 package_file <- function(file, package) {
