@@ -36,7 +36,7 @@ pak::pak("jasonelaw/pawmap")
 
 You can list files in a data package:
 
-```{r example}
+```{r files}
 library(pawmap)
 package_files()
 ```
@@ -44,13 +44,13 @@ package_files()
 Each data package contains an OGC GeoPackage file `layers.gpkg`. The included
 layers can be listed:
 
-```{r cars}
+```{r layers}
 package_layers()
 ```
 
 Files can be read from the data package:
 
-```{r pressure, echo = FALSE}
+```{r read}
 locations <- read_package_csv("locations.csv")
 catchment <- read_package_gpkg("catchment")
 ```

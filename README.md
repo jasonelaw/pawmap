@@ -64,14 +64,18 @@ package_layers()
 
 Files can be read from the data package:
 
-    #> Rows: 147 Columns: 17
-    #> ── Column specification ────────────────────────────────────────────────────────
-    #> Delimiter: ","
-    #> chr (10): location_code, location_type_bes_name, location_name, manhole_hans...
-    #> dbl  (6): x, y, distance_from_manhole_inches, pipe_hansen_compkey, panel, area
-    #> lgl  (1): in_forest_park
-    #> 
-    #> ℹ Use `spec()` to retrieve the full column specification for this data.
-    #> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+``` r
+locations <- read_package_csv("locations.csv")
+#> Rows: 147 Columns: 17
+#> ── Column specification ────────────────────────────────────────────────────────
+#> Delimiter: ","
+#> chr (10): location_code, location_type_bes_name, location_name, manhole_hans...
+#> dbl  (6): x, y, distance_from_manhole_inches, pipe_hansen_compkey, panel, area
+#> lgl  (1): in_forest_park
+#> 
+#> ℹ Use `spec()` to retrieve the full column specification for this data.
+#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+catchment <- read_package_gpkg("catchment")
+```
 
 Much more functionality remains to be added. Stay tuned.

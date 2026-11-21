@@ -41,7 +41,7 @@ package_files <- function(package) {
 read_package_csv <- function(file, package) {
   stopifnot(identical(fs::path_ext(file), "csv"))
   file <- package_file(file, package)
-  readr::read_csv(file)
+  readr::read_csv(file, show_col_types = FALSE)
 }
 
 #' @export
