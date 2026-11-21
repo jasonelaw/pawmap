@@ -11,7 +11,9 @@ Roxygen: list(markdown = TRUE)
 URL: https://github.com/jasonelaw/pawmap
 BugReports: https://github.com/jasonelaw/pawmap/issues
 Imports: 
+    clock,
     dplyr,
     fs,
-    lubridate
+    lubridate,
+    sf
 RoxygenNote: 7.3.3
