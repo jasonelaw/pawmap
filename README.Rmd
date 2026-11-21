@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# pawmap
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The pawmap package contains utilities for interacting with data from the City of
+Portland's [Portland Area Watershed Monitoring and Assessment Program](https://www.portland.gov/bes/protecting-rivers-streams/watershed-monitoring/portland-area-watershed-monitoring-and). Data packages in the form of a zip file containing
+PAWMAP data will be available from the [pawmap-data](https://github.com/jasonelaw/pawmap-data)
+repository. An example data package is included with the pawmap package. 
+
+## Installation
+
+You can install the development version of pawmap from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("jasonelaw/pawmap")
+```
+
+## Examples
+
+You can list files in a data package:
+
+```{r example}
+library(pawmap)
+package_files()
+```
+
+Each data package contains an OGC GeoPackage file `layers.gpkg`. The included
+layers can be listed:
+
+```{r cars}
+package_layers()
+```
+
+Files can be read from the data package:
+
+```{r pressure, echo = FALSE}
+locations <- read_package_csv("locations.csv")
+catchment <- read_package_gpkg("catchment")
+```
+
+Much more functionality remains to be added. Stay tuned.
