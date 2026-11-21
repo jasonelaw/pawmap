@@ -52,7 +52,10 @@ Files can be read from the data package:
 
 ```{r read}
 locations <- read_package_csv("locations.csv")
+locations
+
 catchment <- read_package_gpkg("catchment")
+catchment
 ```
 
 Much more functionality remains to be added. Stay tuned.
