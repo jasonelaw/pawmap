@@ -37,7 +37,7 @@ panel_design <- function(by = c("year", "quarter")) {
         each = 16,
         length.out = dplyr::n()
       ),
-      fiscal_year = get_year(calendar),
+      fiscal_year = clock::get_year(calendar),
       fiscal_year = paste0(fiscal_year - 1, "-", fiscal_year)
     ) |>
     dplyr::select(-start_day)
